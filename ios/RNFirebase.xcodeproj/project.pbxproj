@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00D58584221C4D4B004DD5D9 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D58583221C4D4B004DD5D9 /* FirebaseCore.framework */; };
 		168785AD210B584E00E4BD57 /* RCTConvert+UIBackgroundFetchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 168785AB210B584E00E4BD57 /* RCTConvert+UIBackgroundFetchResult.m */; };
 		17AF4F6B1F59CDBF00C02336 /* RNFirebaseLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF4F6A1F59CDBF00C02336 /* RNFirebaseLinks.m */; };
 		27540F9A209F3641001F4AF4 /* RNFirebaseFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27540F99209F3641001F4AF4 /* RNFirebaseFunctions.m */; };
@@ -49,6 +50,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00D58583221C4D4B004DD5D9 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		134814201AA4EA6300B7C361 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNFirebase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		168785AB210B584E00E4BD57 /* RCTConvert+UIBackgroundFetchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+UIBackgroundFetchResult.m"; sourceTree = "<group>"; };
 		168785AC210B584E00E4BD57 /* RCTConvert+UIBackgroundFetchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+UIBackgroundFetchResult.h"; sourceTree = "<group>"; };
@@ -112,12 +114,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D58584221C4D4B004DD5D9 /* FirebaseCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00D58582221C4D4B004DD5D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00D58583221C4D4B004DD5D9 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +192,7 @@
 				83C3EEED1FA1EACC00B64D3C /* RNFirebaseUtil.h */,
 				83C3EEEC1FA1EACC00B64D3C /* RNFirebaseUtil.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				00D58582221C4D4B004DD5D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -537,6 +549,7 @@
 					"$(SRCROOT)/../../react-native/React/**",
 					"${SRCROOT}/../../../ios/Firebase/**",
 					"${SRCROOT}/../../../ios/Pods/Headers/Public/**",
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/iphoneos",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -575,12 +588,14 @@
 					"$(SRCROOT)/../../../ios/Pods/FirebaseRemoteConfig/Frameworks",
 					"$(SRCROOT)/../../../ios/Pods/FirebaseStorage/Frameworks",
 					"$(SRCROOT)/../../../ios/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks",
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/iphoneos",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../../react-native/React/**",
 					"${SRCROOT}/../../../ios/Firebase/**",
 					"${SRCROOT}/../../../ios/Pods/Headers/Public/**",
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/iphoneos",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
